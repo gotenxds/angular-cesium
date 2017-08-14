@@ -8,13 +8,15 @@
         <span class="fill-remaining-space"></span>
         <button md-button (click)="appSettingsService.realTracksData=true">REAL TRACKS</button>
         <button md-button (click)="appSettingsService.realTracksData=false">SIMULATED TRACKS</button>
-        <a href="https://github.com/TGFTech/angular-cesium" class="github-link">
+        <a href="../assets/f15raam.glb" class="github-link">
             <img class="github" src="../assets/GitHub-Mark-Light.png">
         </a>
+
     </md-toolbar>
     <md-sidenav #sidenav class="sidenav">
         <settings-form (cleanMap)="map.removeAll();" (showEvent)="layer.setShow($event);"></settings-form>
     </md-sidenav>
 
     <demo-map [tracksRealData]="appSettingsService.realTracksData" #map></demo-map>
+
 </md-sidenav-container>
