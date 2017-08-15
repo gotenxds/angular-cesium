@@ -11,7 +11,7 @@ import { AcNotification } from "../../../../../src/models/ac-notification";
   providers: [TracksDataProvider]
 })
 export class ModelLayerComponent implements OnInit {
-  readonly url: string = 'http://localhost:8080/assets/f15raam.glb';
+  readonly url: string = 'https://raw.githubusercontent.com/gotenxds/angular-cesium/xxxxx/demo/assets/f15raam.glb';
   @ViewChild(AcLayerComponent) readonly layer:AcLayerComponent;
   readonly Cesium = Cesium;
 
